@@ -1,0 +1,331 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+  /* 1st in command */
+  .discordred {
+    background-color:#e91e63;
+  }
+
+  /* 2nd in command */
+  .discordblue {
+    background-color:#206694; 
+  }
+
+  /* helpers */
+  .discordpurple {
+    background-color:#71368a;
+  }
+
+   /* members */
+  .discordgreen {
+    background-color:#1abc9c;
+  }
+
+    /* other (such as content creator) */
+  .discordyellow {
+    background-color: #f1c40f;
+  }
+
+  body {
+    margin: 10;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding:0px; /* Add some padding for spacing */
+}
+
+p {
+    overflow-wrap: break-word; /* Allow long words to break */
+}
+
+.navbar {
+    text-align: center; /* Align navbar content to the center */
+    background-color: white; /* Background color of the navbar */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Vertical and horizontal padding */
+}
+
+.navbar a {
+    color: black; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 16px; /* Padding between anchor tags */
+    border: 1px solid black; /* Add border around anchor tags */
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.navbar a:hover {
+    background-color: #ff0000; /* Change background color on hover */
+    transform: scale(1.1); /* Zoom in effect on hover */
+    border-color: #fff; /* Change border color on hover #555*/
+}
+
+.zoom-in {
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.zoom-in:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+    background-color:#ff0000;
+}
+
+/* CSS for color legend */
+.color-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.color-label {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* For the main image */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* CSS for the counter (start) */
+.container {
+    text-align: center;
+}
+
+#counter {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#counter:hover {
+    animation-play-state: paused;
+}
+
+.message {
+    font-size: 24px;
+    color: #666;
+}
+/* CSS for the counter (end) */
+
+h1 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left:500px;
+    margin-right:500px;
+    border-color:black;
+    border-width:thick;
+    border-style:ridge;
+}
+
+h2 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left:500px;
+    margin-right:500px;
+    border-color:black;
+    border-width:thick;
+    border-style:ridge;
+}
+
+
+
+
+/* For the review and gallery images */
+.review1 {
+    width: 600px; /* Set the width of the images */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+.review2 {
+    width: 544px;
+    height: auto;
+    padding-right:60px;
+}
+
+#reviews {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slideshow Gallery styling */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px; /* Adjust maximum width as needed */
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Navigation arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Logo for the server */
+
+/* Triangle logo styling */
+.containertwo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 400px solid #ff0000; /* Adjust color as needed */
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .triangle:hover {
+    transform: rotate(11520deg); /* Rotate the triangle by 180 degrees on hover */
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.5); /* Add a halo effect */
+  }
+  
+  .triangle:hover::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 400px solid rgba(255, 0, 0, 0.5); /* Adjust color and transparency as needed */
+  }
+  
+  .triangle-link {
+    display: inline-block;
+  }
+  
+  @keyframes fade-in-out {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+
+
+
+
+/* Back to top link */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}

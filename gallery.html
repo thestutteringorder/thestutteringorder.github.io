@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <section id="gallery">
+        <h2 align="center" class="zoom-in">Gallery</h2>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="stuttering images/disboard1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="stuttering images/disboard2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="stuttering images/disboard3.png" style="width:100%">
+        </div>
+    
+        <!-- Add more slides as needed -->
+    
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </section>
+
+    <!-- Script for slideshow functionality -->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
